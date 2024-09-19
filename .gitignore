@@ -1,2 +1,3 @@
 # Ignore .ttbin files
 *.ttbin
+*.npz
