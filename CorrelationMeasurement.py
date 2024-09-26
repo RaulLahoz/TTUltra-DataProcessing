@@ -22,7 +22,7 @@ corr = Correlation(tagger, corr_ch1, corr_ch2, bwcorr, nbins)
 print("Correlation measurement is running.")
 
 # collect data for 10 seconds and plot
-sleep(1)
+sleep(10)
 
 # normalized correlation -> Photon Antibunching
 xcorr = corr.getIndex()
