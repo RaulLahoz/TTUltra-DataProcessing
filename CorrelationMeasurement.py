@@ -26,10 +26,10 @@ sleep(10)
 
 # normalized correlation -> Photon Antibunching
 xcorr = corr.getIndex()
-# ycorr = corr.getDataNormalized()
+ycorr_norm = corr.getDataNormalized()
 ycorr = corr.getData()
 
-np.savez("hist.npz", xcorr, ycorr)
+np.savez("hist.npz", xcorr, ycorr, ycorr_norm)
 
 plt.plot(xcorr, ycorr)
 plt.show()
